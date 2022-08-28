@@ -1,13 +1,14 @@
 .list.activities__list {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .activities {
     @media screen and (max-width: 1199px) {
     display: none;
-        }
+    }
     
 }
 .activities__title {
@@ -25,7 +26,6 @@
 
 .activities__item {
     width: calc((100% - 60px) /3);
-    margin-right: 30px;
 
 }
 

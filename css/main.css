@@ -687,26 +687,40 @@ button {
   color: var(--primary-bcg);
 }
 
+@media screen and (max-width: 767px) {
+  .list.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .list.advantages {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list.advantages {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
-.advantages__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
-    width: calc((100% - 60px) / 2);
-    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__item {
     width: calc((100% - 90px) / 4);
-    margin-right: 30px;
     margin-bottom: 0px;
   }
 }
@@ -762,6 +776,8 @@ button {
 .list.activities__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -785,7 +801,6 @@ button {
 
 .activities__item {
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
 }
 
 .activities__item:nth-child(3n) {
@@ -844,7 +859,7 @@ button {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .list.team__list {
     display: flex;
     flex-wrap: wrap;
@@ -874,7 +889,6 @@ button {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 90px) / 4);
-    margin-right: 30px;
     margin-bottom: 0px;
   }
 }
@@ -1194,6 +1208,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-top {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
